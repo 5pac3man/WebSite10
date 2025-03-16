@@ -9,13 +9,14 @@
         }
 
         body {
-            background-image: url('Img/desert-2340326_1920.jpg');
+            /*background-image: url('Img/desert-2340326_1920.jpg');*/
+            background-image: url('Img/desert.jpg');
             background-repeat: no-repeat;
             background-size: auto;
         }
 
         h2 {
-            color: white;
+            color:;
             text-align: center;
         }
 
@@ -24,7 +25,7 @@
         }
 
         header {
-            background-color: red;
+            background-color: white;
             padding: 12px;
             margin: 62px 150px;
             border: 5px;
@@ -35,13 +36,47 @@
         }
 
         main {
-            background-color: blue;
-            padding: 50px;
+            background-color: white;
+            padding: 12px;
+            margin: 62px 150px;
+            border: 5px;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: steelblue;
+            height: 95px;
         }
 
         footer {
-            background-color: green;
-            padding: 50px;
+            background-color: white;
+            padding: 12px;
+            margin: 0px 114px;
+            border: 5px;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: steelblue;
+            height: 95px;
+            position: fixed;
+            bottom: 0;
+        }
+
+        #logo {
+            width: 46px;
+            height: 44px;
+        }
+
+        #chisiamo {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        .Immagine {
+            justify-content: center; /* Centra orizzontalmente */
+            width: 108px;
+            height: 94px;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: center;
+            gap: 50px;
         }
     </style>
 </head>
@@ -54,8 +89,13 @@
             <div id="menu">
                 <table>
                     <tr>
-                        <td>Home</td>
-                        <td>Chi Siamo?</td>
+                        <td>
+                            <a href="HtmlPage.html">
+                                <img src="Img/logo per agenzia di viaggio.png" id="logo" />
+                            </a>
+
+                        </td>
+                        <td id="chisiamo">Chi Siamo?</td>
                         <td>Contatti</td>
                     </tr>
                 </table>
@@ -63,18 +103,32 @@
 
         </header>
         <main>
-            
+            <div class="Immagine">
+
+                    <img class="Immagine" src="Img/mountain.jpg" />
+                
+
+                <img class="Immagine" src="Img/sea.jpg" />
 
 
+                
+                <a href="desert.html"> <img class="Immagine" src="Img/desertim.jpg"/> </a>
+
+
+
+
+            </div>
 
 
 
 
 
         </main>
-        <footer>a</footer>
+        <footer>
+            Agenzia Viaggi A quel Paese.&copy;
+
+        </footer>
     </container>
-    Agenzia Viaggi A quel Paese.&copy;
 </body>
 
 </html>
