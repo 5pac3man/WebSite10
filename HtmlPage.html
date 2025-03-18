@@ -12,11 +12,16 @@
             /*background-image: url('Img/desert-2340326_1920.jpg');*/
             background-image: url('Img/desert.jpg');
             background-repeat: no-repeat;
-            background-size: auto;
+            background-size: cover;
+        }
+
+        @media screen and (max-width: 2048px) {
+            body {
+                background-size: auto;
+            }
         }
 
         h2 {
-            color:;
             text-align: center;
         }
 
@@ -43,20 +48,25 @@
             border-style: solid;
             border-radius: 5px;
             border-color: steelblue;
-            height: 95px;
+            height: 375px;
         }
 
         footer {
-            background-color: white;
+            /* background-color: white; */
             padding: 12px;
-            margin: 0px 114px;
+            margin: 0px 140px;
             border: 5px;
             border-style: solid;
             border-radius: 5px;
             border-color: steelblue;
-            height: 95px;
+            height: 25px;
             position: fixed;
-            bottom: 0;
+            bottom: 50px;
+             color: white; 
+            background: ;
+            /*filter: blur(5px);*/
+            backdrop-filter: blur(5px) ;
+            /*opacity:inherit;*/
         }
 
         #logo {
@@ -78,12 +88,60 @@
             justify-content: center;
             gap: 50px;
         }
+
+        #offerte {
+            width: 108px;
+            height: 94px;
+        }
+
+        /* #benvenuti {
+            width: 108px;
+            height: 94px;
+        }*/
+
+        .Sezofferte {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            /* flex-flow: row nowrap; */
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: stretch;
+            background-color: white;
+            height: 140px;
+            padding: 5px;
+            gap: 5px;
+            margin-top: 25px;
+        }
+
+            .Sezofferte > div {
+                background: white;
+                /* border: 3px solid #ffcc80; */
+                border-radius: 5px;
+                padding: 8px;
+            }
+
+
+        .benvenuti {
+            /*flex: 0 1 auto;*/
+            order: 0;
+            align-self: stretch;
+            width: 561px;
+            margin-right: 100px;
+        }
+
+        .offerte {
+            /*flex: 0 1 auto;*/
+            order: 0;
+            margin-left: -68px;
+            align-self: stretch;
+        }
     </style>
 </head>
 
 <body>
     <container>
-       
+
         <header>
             <h2>Agenzia Viaggi A quel paese</h2>
             <div id="menu">
@@ -95,29 +153,55 @@
                             </a>
 
                         </td>
-                        <td id="chisiamo">Chi Siamo?</td>
-                        <td>Iscriviti</td>
+                        <td id="chisiamo">
+                            <a href="Chi siamo.html">Chi siamo?</a>
+                        </td>
+                        <td>                        <a href="Iscriviti.html">Iscriviti</a></td>
                     </tr>
                 </table>
             </div>
 
         </header>
         <main>
+            <h2>Scegli la tua destinazione!</h2>
             <div class="Immagine">
 
-                    <img class="Immagine" src="Img/mountain.jpg" />
-                
-
-                <img class="Immagine" src="Img/sea.jpg" />
+                <a href="Montagna.html"><img class="Immagine" src="Img/mountain.jpg" /> </a>
 
 
-                
-                <a href="desert.html"> <img class="Immagine" src="Img/desertim.jpg"/> </a>
+                <a href="Mare.html">  <img class="Immagine" src="Img/sea.jpg" /></a>
 
 
 
+                <a href="desert.html"> <img class="Immagine" src="Img/desertim.jpg" /> </a>
+            </div>
+
+            <!--<div id="Sezofferte">-->
+            <!--Tante offerte a portata di click!-->
+            <!--<table>
+                <tr>
+                    <td id="benvenuti">Benvenuti in [Viaggi a Quel Paese!], il vostro punto di riferimento per viaggi indimenticabili! Con anni di esperienza nel settore, offriamo soluzioni personalizzate per ogni tipo di viaggio, che si tratti di una rilassante vacanza al mare, un'avventura in montagna o una scoperta culturale in una città lontana. Grazie alla nostra passione per i viaggi e al nostro servizio clienti dedicato, ci impegniamo a realizzare ogni vostro sogno di viaggio, con pacchetti esclusivi, assistenza 24 ore su 24 e proposte su misura. Scegliere [Viaggi a Quel Paese!] significa affidarsi a professionisti che conoscono le destinazioni e curano ogni dettaglio per un'esperienza senza pensieri.</td>
+                    <td>
+                        <img id="offerte" src="Img/Offerte.png" />
+                    </td>
+                </tr>
+
+            </table>-->
+            <h2>Tante offerte a portata di click!</h2>
+            <div class="Sezofferte">
+
+                <div class="benvenuti">
+                    <p>
+                        Benvenuti in [Viaggi a Quel Paese!], il vostro punto di riferimento per viaggi indimenticabili! Con anni di esperienza nel settore, offriamo soluzioni personalizzate per ogni tipo di viaggio, che si tratti di una rilassante vacanza al mare, un'avventura in montagna o una scoperta culturale in una città lontana. Grazie alla nostra passione per i viaggi e al nostro servizio clienti dedicato, ci impegniamo a realizzare ogni vostro sogno di viaggio, con pacchetti esclusivi, assistenza 24 ore su 24 e proposte su misura. Scegliere [Viaggi a Quel Paese!] significa affidarsi a professionisti che conoscono le destinazioni e curano ogni dettaglio per un'esperienza senza pensieri.
+                    </p>
+                </div>
+                <div class="offerte">
+                    <img id="offerte" src="Img/Offerte.png" />
+                </div>
 
             </div>
+
+            <!--</div>-->
 
 
 
