@@ -5,6 +5,165 @@
     <title></title>
 </head>
 <body>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            /* flex-flow: column nowrap; */
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            /* background-color: #bbdefb;*/
+            height: 100%;
+            padding: 15px;
+            gap: 5px;
+        }
 
+            .flex-container > div {
+                /* background: aliceblue;*/
+                /* border: 3px solid; */
+                border-radius: 5px;
+                padding: 46px;
+                padding: 46px;
+                gap: 30px;
+               
+            }
+                .dest1:hover {
+                    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                }
+        .dest2:hover {
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .dest3:hover {
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+
+                
+                .titolo {
+            /* flex:0 1 auto; */
+            align-self: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #Mare {
+            text-align: center;
+            border-radius: 10px;
+            background-image: url("Img/mareblu.jpg");
+            background-size: cover;
+            background-position-y: bottom;
+        }
+
+        #destinazioni {
+            text-align: left;
+            font-size: larger;
+            font-weight: bold;
+           
+        }
+
+        #menu {
+            justify-items: anchor-center;
+        }
+
+        .dest1 {
+            /* flex:1 1 auto; */
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-self: stretch;
+        }
+
+        .dest2 {
+            /* flex:1 1 auto; */
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-self: stretch;
+        }
+
+        .dest3 {
+            /* flex:1 1 auto; */
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-self: stretch;
+        }
+
+        #img3 {
+            width: contain;
+            height: 50%;
+        }
+
+        #imgmaldive, #imgsantorini, #imgibiza {
+            width: 50%;
+            height: auto;
+        }
+
+        #descrizione1, #descrizione2, #descrizione3 {
+            width: 50%;
+            height: auto;
+        }
+    </style>
+
+
+    <div class="flex-container">
+        <div class="titolo">
+            <h2>Agenzia Viaggi A quel paese</h2>
+            <div id="menu">
+                <table>
+                    <tr>
+                        <td id="Home">
+                            <a href="HtmlPage.html">Home</a>
+                        </td>
+                        <td id="chisiamo">
+                            <a href="Chi siamo.html">Chi siamo?</a>
+                        </td>
+                        <td>
+                            <a href="Iscriviti.html">Iscriviti</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div id="Mare">
+            <h1>Mare</h1>
+        </div>
+        <div id="destinazioni">Ecco le nostre destinazioni migliori</div>
+        <div class="dest1">
+
+            <img id="imgmaldive" src="Img/maldive.jpg" />
+
+            <div id="descrizione1">
+                <h2>Maldive</h2>
+                <p>Le Maldive sono un paradiso nell'Oceano Indiano, famoso per le sue acque cristalline e le spiagge di sabbia bianca. Con oltre 1.000 isole, l'arcipelago offre una combinazione perfetta di lusso e natura incontaminata. Resort esclusivi, bungalow su palafitte e un servizio impeccabile ti garantiranno un soggiorno da sogno. Le acque turchesi sono ideali per attività come snorkeling e immersioni, mentre le spiagge appartate offrono relax e tranquillità. Le Maldive sono la destinazione perfetta per una fuga romantica o una vacanza in famiglia, lontano dal caos quotidiano. Un vero angolo di paradiso per rigenerarsi e godere di una bellezza senza pari.</p>
+            </div>
+        </div>
+        <div class="dest2">
+            <div id="descrizione2">
+                <h2>Santorini</h2>
+                <p>Santorini è una delle isole più affascinanti della Grecia, famosa per le sue case bianche con tetti blu che si affacciano sul mare azzurro dell’Egeo. Con le sue scogliere mozzafiato e i tramonti spettacolari, è la destinazione ideale per chi cerca un mix di bellezza naturale, cultura e romanticismo. Le acque cristalline invitano a nuotare, fare snorkeling e godersi le escursioni in barca. Santorini offre anche una ricca storia da esplorare, con antiche rovine e tradizioni che si intrecciano con la vita moderna. Perfetta per una fuga romantica o una vacanza all’insegna della tranquillità, l’isola promette un'esperienza unica e indimenticabile.</p>
+            </div>
+            <img id="imgsantorini" src="Img/santorini.jpg" />
+        </div>
+        <div class="dest3">
+
+            <img id="imgibiza" src="Img/ibiza.jpg" />
+
+            <div id="descrizione3">
+                <h2>Ibiza</h2>
+                <p>Ibiza è una delle isole più celebri delle Baleari, conosciuta per la sua vibrante vita notturna e le spiagge incantevoli. Oltre alle discoteche famose in tutto il mondo, l'isola offre anche angoli di tranquillità, con acque cristalline, calette nascoste e panorami mozzafiato. Ibiza è una meta ideale per chi cerca divertimento e relax, con numerosi locali, ristoranti e bar che animano la notte. Durante il giorno, le sue spiagge sabbiose e le acque turchesi sono perfette per praticare sport acquatici o semplicemente godersi il sole. Con una ricca offerta culturale, tra mercati, arte e tradizioni, Ibiza unisce la vivacità della festa alla serenità della natura, diventando una destinazione completa e affascinante.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
