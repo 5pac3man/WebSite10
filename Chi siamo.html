@@ -3,8 +3,98 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <style>
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            /* flex-flow: column nowrap; */
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            /* background-color: #bbdefb;*/
+            height: 100%;
+            padding: 15px;
+            gap: 5px;
+            padding: 112px;
+            background-image: url('Img/sfondoagenzia.jpg');
+        }
+        .titolo {
+            display: flex;
+            flex-direction: column; /* Allinea il titolo e il menu verticalmente */
+            align-items: center; /* Centra il titolo e il menu orizzontalmente */
+            text-align: center; /* Centra il testo all'interno del titolo */
+            margin-bottom: 20px;
+        }
+        #menu {
+            display: flex; /* Usa flexbox per il menu */
+            justify-content: center; /* Centra il menu orizzontalmente */
+            gap: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        .chisiamo, .cosedasapere, .destinazioni {
+            background: white;
+            color: black;
+            margin: 5px 5px 5px 5px;
+            padding: 30px;
+            opacity: 0.8;
+            border-radius: 10px;
+        }
+        .chisiamo p, .cosedasapere p, .destinazioni p{
+            opacity: 1;
+        }
+
+    </style>
 </head>
 <body>
+    <div class="flex-container">
+        <div class="titolo">
+            <h2>Agenzia Viaggi A quel paese</h2>
+            <div id="menu">
+                <table>
+                    <tr>
+                        <td id="Home">
+                            <a href="HtmlPage.html">Home</a>
+                        </td>
+                        <td id="chisiamo">
+                            <a href="Chi siamo.html">Chi siamo?</a>
+                        </td>
+                        <td>
+                            <a href="Iscriviti.html">Iscriviti</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
+        </div>
+
+        <div class="chisiamo">
+            <h1>Chi siamo</h1>
+            <p>
+                L'Agenzia Viaggi a quel paese è la tua porta d'accesso verso destinazioni uniche e indimenticabili, pensate per chi desidera scoprire il mondo con un tocco di originalità. Fondata con la missione di offrire esperienze di viaggio fuori dagli schemi, l'agenzia si distingue per la sua capacità di personalizzare ogni itinerario, rendendo ogni viaggio un'avventura unica e su misura. Dalle città europee più affascinanti ai luoghi più remoti e incontaminati del pianeta, Viaggi a quel paese sa come combinare comfort, autenticità e un pizzico di spirito di avventura.
+
+                Il nostro team di esperti viaggiatori è sempre a disposizione per consigliare i percorsi migliori, dalle vacanze rilassanti alle esperienze più dinamiche. Sia che tu stia cercando una fuga romantica, una vacanza in famiglia o un viaggio di gruppo, troverai sempre l'opzione perfetta. Con pacchetti completi, guide locali esperte e un servizio clienti impeccabile, Viaggi a quel paese ti farà sentire come a casa, ovunque tu vada. Preparati a vivere il viaggio dei tuoi sogni, con noi ogni destinazione è a portata di mano!
+            </p>
+        </div>
+
+        <div class="destinazioni">
+            <h1>Destinazioni</h1>
+            <p>
+                Viaggi a quel paese ti invita a scoprire una selezione di destinazioni esclusive, ideali per ogni tipo di viaggiatore. Se sogni le luci di Parigi, i paesaggi mozzafiato della Thailandia o il fascino delle isole greche, siamo pronti a realizzare il tuo viaggio su misura. Dalle metropoli vibranti d’Europa e Nord America alle meraviglie naturali dell’Africa e Sud America, ogni itinerario è pensato per offrirti esperienze autentiche. Che tu stia cercando relax, avventura o cultura, Viaggi a quel paese ha la destinazione perfetta per te. Parti con noi e vivi un viaggio indimenticabile!
+
+
+
+            </p>
+        </div>
+        <div class="cosedasapere">
+            <h1>Cose da sapere prima del tuo viaggio</h1>
+            <p>Prima di partire con Viaggi a quel paese, ci sono alcune cose importanti da tenere a mente per assicurarti un'esperienza senza intoppi. Prima di tutto, verifica la validità del tuo passaporto e dei visti necessari per la tua destinazione. Informati sulle vaccinazioni richieste e consulta le normative sanitarie locali. Assicurati di avere una copia dei documenti di viaggio, come il biglietto aereo e la prenotazione dell’hotel. Conosci le valute locali e, se necessario, cambia in anticipo un po’ di denaro. Non dimenticare di stipulare un’assicurazione di viaggio per coprire eventuali imprevisti. Inoltre, informati sul clima per preparare abbigliamento adeguato. Ultimo consiglio: fai una lista di emergenza con numeri utili per qualsiasi evenienza. Prepararsi bene ti garantirà un viaggio sereno e piacevole!</p>
+        </div>
+
+    </div>
 </body>
 </html>
