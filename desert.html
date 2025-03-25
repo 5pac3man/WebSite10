@@ -2,9 +2,203 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Deserto</title>
 </head>
 <body>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            /* flex-flow: column nowrap; */
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            /* background-color: #bbdefb;*/
+            height: 100%;
+            padding: 15px;
+            gap: 5px;
+        }
 
+            .flex-container > div {
+                /* background: aliceblue;*/
+                /* border: 3px solid; */
+                border-radius: 5px;
+                padding: 46px;
+                padding: 46px;
+                gap: 30px;
+            }
+
+        .dest1:hover {
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+
+        .dest2:hover {
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+
+        .dest3:hover {
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+
+
+        .titolo {
+            /* flex:0 1 auto; */
+            align-self: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #desert {
+            text-align: center;
+            border-radius: 10px;
+            background-image: url('Img/Desertobg.png');
+            background-size: cover;
+            background-position-y: bottom;
+        }
+
+        #destinazioni {
+            text-align: left;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        #menu {
+            justify-items: anchor-center;
+        }
+
+        .dest1 {
+            /* flex:1 1 auto; */
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-self: stretch;
+        }
+
+        .dest2 {
+            /* flex:1 1 auto; */
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-self: stretch;
+        }
+
+        .dest3 {
+            /* flex:1 1 auto; */
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-self: stretch;
+        }
+
+        #img3 {
+            width: contain;
+            height: 50%;
+        }
+
+        #imgmex, #imgsahara, #imgtatacoa {
+            width: 50%;
+            height: auto;
+        }
+
+        #descrizione1, #descrizione2, #descrizione3 {
+            width: 50%;
+            height: auto;
+        }
+    </style>
+
+
+    <div class="flex-container">
+        <div class="titolo">
+            <h2>Agenzia Viaggi A quel paese</h2>
+            <div id="menu">
+                <table>
+                    <tr>
+                        <td id="Home">
+                            <a href="HtmlPage.html">Home</a>
+                        </td>
+                        <td id="chisiamo">
+                            <a href="Chi siamo.html">Chi siamo?</a>
+                        </td>
+                        <td>
+                            <a href="Iscriviti.aspx">Iscriviti</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div id="desert">
+            <h1>Deserto</h1>
+        </div>
+        <div id="destinazioni">Ecco le nostre destinazioni migliori</div>
+        <div class="dest1">
+
+            <img id="imgmex"
+                 src="Img/New Mexico.png" /> />
+
+            <div id="descrizione1">
+                <h2>Jornada Del Muerto</h2>
+                <p>
+                    Il deserto Jornada del Muerto è un luogo remoto e affascinante situato nel Nuovo Messico,
+                    negli Stati Uniti. Conosciuto per il suo nome suggestivo, che significa "Giornata del Morto",
+                    questo vasto paesaggio desertico è caratterizzato da distese aride,
+                    colline sabbiose e cieli infiniti.
+                    È un luogo ricco di storia: attraversato in passato da pionieri e viaggiatori coraggiosi,
+                    il Jornada del Muerto rimane oggi un'area isolata che invita all'esplorazione e alla contemplazione.
+                    Perfetto per gli amanti del silenzio assoluto, della natura incontaminata e dei tramonti spettacolari.
+                    Consigliato per chi cerca un'avventura fuori dagli itinerari turistici tradizionali!
+                    Sarebbe qualcosa che ti piacerebbe scoprire?
+
+
+
+                </p>
+            </div>
+        </div>
+        <div class="dest2">
+            <div id="descrizione2">
+                <h2>Deserto del Sahara</h2>
+                <p>
+                    Il deserto del Sahara è il più grande deserto caldo del mondo,
+                    estendendosi attraverso l'Africa settentrionale con una superficie che supera i 9 milioni di chilometri quadrati.
+                    Questo paesaggio straordinario è caratterizzato da dune di sabbia dorata, altopiani rocciosi, oasi lussureggianti e cieli immensi.
+                    Ricco di cultura e storia, il Sahara è stato attraversato per secoli da carovane di mercanti, berberi e nomadi.
+                    È un luogo dove si possono vivere esperienze uniche, come osservare l'alba tra le dune, visitare antiche città carovaniere o immergersi nell'incredibile silenzio del deserto.
+                    Perfetto per chi cerca un'avventura che combina natura, storia e il fascino di luoghi senza tempo. Ti affascina l'idea di esplorarlo?
+                </p>
+            </div>
+            <img id="imgsahara"
+                 src="Img/sahara.png" /> />
+        </div>
+        <div class="dest3">
+
+
+
+
+            <img id="imgtatacoa"
+                 src="Img/deserto della tatacoa.jpg" /> />
+
+            <div id="descrizione3">
+                <h2>Deserto de la Tatacoa</h2>
+                <p>
+                    Il Deserto de la Tatacoa non è molto noto e ufficialmente non è nemmeno considerato un deserto:
+                    nonostante non vi sia vegetazione, infatti,
+                    non piove abbastanza poco per poterlo considerare nel novero geografico dei deserti (la denominazione precisa è quella di “foresta tropicale arida”).
+                    E’ piccolo di estensione, ma molto affascinante per le strane conformazioni che lo compongono.
+                    Innanzitutto è diviso in due parti: una denominata rossa, per il colore delle rocce, l’altra grigia.
+                    La prima è sicuramente la più spettacolare: un labirinto di pinnacoli sfumati di ocra, in cui è possibile perdersi a passeggiare.
+
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
